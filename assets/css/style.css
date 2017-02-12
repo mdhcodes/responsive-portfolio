@@ -1,0 +1,538 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #eef;
+  background-image: url("../images/concrete_seamless/concrete_seamless.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+header {
+  width: 100%;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.375em;
+}
+
+h1 {
+  font-size: 1.75em;
+  background-color: #4aaaa5;
+  display: inline-block;
+  width: 300px;
+  color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+h1:hover {
+  background: #eee;
+  color: #4aaaa5;
+}
+
+h2 {
+  font-size: 1.625em;
+  padding: 10px 0 20px 2px;
+}
+
+nav {
+  float: right;
+  margin: 40px 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li.pipe::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+nav li a {
+  padding: 10px;
+}
+
+nav a {
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+nav a:hover {
+  background-color: #4aaaa5;
+  color: #fff;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+}
+
+.about,
+.connect,
+.portfolio,
+.contact {
+  margin: 40px 0;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+  float: left;
+}
+
+.about,
+.portfolio,
+.contact {
+  max-width: 650px;
+}
+
+.connect {
+  max-width: 270px;
+}
+
+.separator {
+  width: 99%;
+  border: 1.5px solid #dbd6d6;
+  margin: 0 auto 20px;
+}
+
+.connect hr {
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+
+/* ABOUT */
+
+.about,
+.portfolio,
+.contact {
+  margin-left: 12px;
+  margin-right: 8px;
+}
+
+.connect {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.about-img {
+  margin: 0 20px 20px 0;
+  float: left;
+  width: 30%;
+}
+
+
+/* CONNECT */
+
+.connect {
+  text-align: center;
+}
+
+.connect li {
+  display: inline-block;
+  margin: 5px 1px;
+  padding: 5px 0;
+  width: 70px;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+}
+
+.connect p {
+  font-size: 0.625em;
+}
+
+.github p {
+  color: #000;
+}
+
+.linkedin p {
+  color: #0077b5;
+}
+
+.stack-overflow p {
+  color: #f48024;
+}
+
+.github {
+  border: 1px solid #000;
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.linkedin {
+  border: 1px solid #0077b5;
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.stack-overflow {
+  border: 1px solid #f48024;
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.github:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.linkedin:hover {
+  background-color: rgba(120, 142, 166, 0.5);
+}
+
+.stack-overflow:hover {
+  background-color: rgba(244, 128, 36, 0.5);
+}
+
+.fa-github {
+  color: #000;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-stack-overflow {
+  color: #f48024;
+}
+
+
+/* PORTFOLIO */
+
+figure {
+  float: left;
+  width: 265px;
+  /*margin: 15px 20px;*/ /* Starting float position */
+  margin: 15px 35px 15px 5px;
+  padding: 0;
+  position: relative;
+}
+
+figure:nth-child(2n) {
+  margin: 15px 5px 15px 35px;
+}
+
+figure h3 {
+  position: absolute;
+  background-color: #4aaaa5;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-weight: normal;
+}
+
+figure h3:hover {
+  color: #777;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+
+}
+
+
+/* CONTACT */
+
+.name,
+.email,
+.message,
+.button {
+  margin: 20px 0 10px 10px;
+}
+
+.name input,
+.email input {
+  padding: 10px;
+  width: 590px;
+}
+
+.message textarea {
+  width: 590px;
+  height: 200px;
+}
+
+.button {
+  background-color: #4aaaa5;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1em;
+  -webkit-box-shadow: 0 0 1px #555;
+  box-shadow: 0 0 1px #555;
+  -webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.button:hover {
+  background-color: #eee;
+  color: #4aaaa5;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #666;
+  padding: 25px;
+  font-size: 0.625em;
+  text-align: center;
+  color: #dbd6d6;
+  border-top: 5px solid #4aaaa5;
+}
+
+
+/* STICKY FOOTER */
+/*
+Thank You -
+http://mystrd.at/modern-clean-css-sticky-footer
+https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 25px; /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+
+  .container,
+  main {
+    max-width: 750px;
+  }
+
+  nav li.pipe::after {
+    content: "";
+  }
+
+  .about,
+  .portfolio,
+  .contact {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .connect {
+    max-width: 300px;
+  }
+
+  .about-img {
+    width: 100%;
+    float: none;
+  }
+
+  figure {
+    width: 100%;
+    float: none;
+  }
+
+  figure,
+  figure:nth-child(2n) {
+    margin: 30px auto 50px;
+  }
+
+  .name input,
+  .email input {
+    max-width: 350px;
+  }
+
+  .message textarea {
+    max-width: 350px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container,
+  main {
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .about,
+  .portfolio,
+  .contact,
+  .connect {
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about {
+    margin-bottom: 20px;
+  }
+  
+  .connect {
+    margin-top: 20px; 
+    text-align: left;
+  }
+
+  .github,
+  .linkedin,
+  .stack-overflow {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 50%;
+    float: left;
+  }
+
+  figure {
+    width: 265px;
+    width: 290px;
+    float: left;
+    margin: 15px 35px 15px 5px;
+  }
+
+  figure:nth-child(2n) {
+    margin: 15px 5px 15px 35px;
+  }
+
+  .name input,
+  .email input {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .message textarea {
+    max-width: 700px;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container,
+  main,
+  h1 {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+    border-bottom: ;
+  }
+
+  nav {
+    float: none;
+    text-align: center;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  nav li a {    
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  .about,
+  .portfolio,
+  .connect {
+    max-width: 580px;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .about-img {
+    width: 100%;
+    float: none;
+  }
+
+  figure {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
+
+  figure:nth-child(2n) {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  nav li a {    
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+}
