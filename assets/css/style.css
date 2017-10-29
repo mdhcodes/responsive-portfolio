@@ -167,9 +167,22 @@ nav a:hover {
 }
 
 .about-img {
-  margin: 0 20px 20px 0;
+  margin: 10px 20px 0 0;
   float: left;
   width: 30%;
+}
+
+.credit {
+  font-size: 0.625em;
+}
+
+.credit a {
+  color: #4aaaa5;
+  border-bottom: 1px dotted;
+}
+
+.credit a:hover {
+  color: initial;
 }
 
 
@@ -420,7 +433,7 @@ footer {
     max-width: 700px;
     width: 100%;
   }
-  
+
   .about,
   .portfolio,
   .contact,
@@ -434,9 +447,9 @@ footer {
   .about {
     margin-bottom: 20px;
   }
-  
+
   .connect {
-    margin-top: 20px; 
+    margin-top: 20px;
     text-align: left;
   }
 
@@ -497,11 +510,11 @@ footer {
     margin-top: 20px;
   }
 
-  nav li a {    
+  nav li a {
     margin-right: 50px;
     margin-left: 50px;
   }
-  
+
   .about,
   .portfolio,
   .connect {
@@ -530,7 +543,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-  nav li a {    
+  nav li a {
     margin-right: 0px;
     margin-left: 0px;
   }
